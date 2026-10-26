@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frecuencia | Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="personal-bar">
+        <div class="personal-container">
+            <div class="personal-item">Desarrollado por: Catalina Herrera y Julieta Palomares</div>
+            <div class="personal-item">Proyecto Frecuencia - UTN 2026</div>
+        </div>
+    </div>
+
+    <!-- 1. HEADER SEMÁNTICO -->
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html" class="logo">📻 Frecuencia</a>
+        </div>
+        <!-- 2. NAV SEMÁNTICO -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="canciones.html">Canciones</a></li>
+                <li><a href="conciertos.html">Conciertos</a></li>
+                <li><a href="#seccion-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. MAIN SEMÁNTICO -->
+    <main class="main-content">
+        <div class="hero-banner">
+            <h1>Bienvenido a Frecuencia</h1>
+            <p class="hero-subtitle">Tu plataforma definitiva para descubrir nueva música y artistas.</p>
+        </div>
+
+        <div id="seccion-tarjetas" class="flex-container">
+            <div class="index-card">
+                <div class="card-content">
+                    <h3>🎧 Explorar Música</h3>
+                    <p>Navega a través de géneros y descubre la historia detrás de cada uno de ellos.</p>
+                </div>
+                <!-- CUMPLE EL PUNTO 4: Enlace directo a otra página usando un ID real -->
+                <a href="musica.html#seccion-historia" class="card-link">Ver historia y géneros &rarr;</a>
+            </div>
+
+            <div class="index-card">
+                <div class="card-content">
+                    <h3>🌟 Artistas</h3>
+                    <p>Conoce las biografías y trayectorias de los talentos actuales, también de leyendas.</p>
+                </div>
+                <a href="artistas.html" class="card-link">Ver artistas &rarr;</a>
+            </div>
+
+            <div class="index-card">
+                <div class="card-content">
+                    <h3>🔥 Main Artists</h3>
+                    <p>Descubre al artista estelar de esta semana y sus principales éxitos.</p>
+                </div>
+                <a href="artistas.html" class="card-link">Ver destacado &rarr;</a>
+            </div>
+        </div>
+
+        <section id="seccion-contacto" class="contact-section">
+            <div class="contact-header">
+                <h2>¿Tienes alguna duda?</h2>
+                <p>Escribinos y nos pondremos en contacto a la brevedad.</p>
+            </div>
+            <div class="contact-form-container">
+                <!-- Formulario limpio sin onsubmit de JS y con method GET para evitar Error 405 local -->
+                <form class="contact-form" action="#" method="GET">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje o Duda</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="contact-info-container">
+                <h3>Información de Contacto</h3>
+                <p>¿Prefieres comunicarte directamente con nosotras? Aquí tienes nuestros datos:</p>
+
+                <ul class="info-list">
+                    <li>
+                        <strong>📍 Institución:</strong> Colegio Nuestra Señora de Fátima - Cipolletti, Río Negro / UTN 2026
+                    </li>
+                    <li>
+                        <strong>💻 Desarrolladoras:</strong>
+                        <span>Julieta Palomares</span>
+                        <span>Catalina Herrera</span>
+                    </li>
+                    <li>
+                        <strong>📻 Proyecto:</strong> Frecuencia Web
+                    </li>
+                    <li>
+                        <strong>Si necesitas consultar:</strong> +54 9 299 546 4774
+                    </li>
+                    <li>
+                        <strong>✉ Correo:</strong> <a href="mailto:contacto@frecuencia.com" class="email-link">contacto@frecuencia.com</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. FOOTER SEMÁNTICO -->
+    <footer class="main-footer">
+        <div class="footer-text">&copy; 2026 Frecuencia. Todos los derechos reservados. Julieta Palomares y Catalina Herrera. Nuestra señora de Fátima. 2026</div>
+    </footer>
+
+</body>
+
+</html>

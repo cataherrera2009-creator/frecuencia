@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frecuencia | Conciertos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="personal-bar">
+        <div class="personal-container">
+            <div class="personal-item">Desarrollado por: Catalina Herrera y Julieta Palomares</div>
+            <div class="personal-item">Proyecto Frecuencia - UTN 2026</div>
+        </div>
+    </div>
+
+    <!-- 1. HEADER SEMÁNTICO -->
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html" class="logo">📻 Frecuencia</a>
+        </div>
+        <!-- 2. NAV SEMÁNTICO -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="canciones.html">Canciones</a></li>
+                <li><a href="conciertos.html" class="active">Conciertos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. MAIN SEMÁNTICO -->
+    <main class="main-content">
+        <div class="hero-banner">
+            <h1 class="page-title">MEJORES CONCIERTOS</h1>
+            <p class="hero-subtitle">Descarga los archivos para hacer de tu noche una de las más mágicas de tu historia.
+            </p>
+        </div>
+
+        <!-- Contenedor de recursos en columna (una caja debajo de la otra) -->
+        <div class="recursos-container">
+
+            <!-- Caja 1: Archivo ZIP -->
+            <div class="recurso-card">
+                <div class="recurso-info">
+                    <h3>El archivo mágico</h3>
+                    <p>Obtén el paquete completo con los flyers de los conciertos mas importantes de este año.</p>
+                </div>
+                <a href="documentos/conciertos.zip" download target="_blank" rel="noopener noreferrer" class="btn-recurso">
+                    📥 Descargar Archivo ZIP
+                </a>
+            </div>
+
+            <!-- Caja 2: Instrucciones PDF con el visor integrado en la página -->
+            <div class="recurso-card">
+                <div class="recurso-info">
+                    <h3>Guía de Instrucciones para armar tu rutina de concierto</h3>
+                    <p>Visualiza el documento en PDF con el paso a paso detallado y especificaciones de experto para
+                        vivir una de las mejores experiencias.</p>
+                </div>
+
+                <!-- Visor integrado del PDF -->
+                <div class="pdf-container-inline">
+                    <iframe src="documentos/TIPS.pdf" class="pdf-iframe-inline"></iframe>
+                </div>
+
+                <a href="documentos/TIPS.pdf" target="_blank" rel="noopener noreferrer" class="btn-recurso">
+                    📥 Descargar PDF de Instrucciones
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 4. FOOTER SEMÁNTICO -->
+    <footer class="main-footer">
+        <div class="footer-text">&copy; 2026 Frecuencia. Todos los derechos reservados. Julieta Palomares y Catalina
+            Herrera. Nuestra señora de Fátima. 2026</div>
+    </footer>
+
+</body>
+
+</html>

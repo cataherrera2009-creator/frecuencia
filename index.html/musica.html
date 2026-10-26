@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frecuencia | Música</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="personal-bar">
+        <div class="personal-container">
+            <div class="personal-item">Desarrollado por: Catalina Herrera y Julieta Palomares</div>
+            <div class="personal-item">Proyecto Frecuencia - UTN 2026</div>
+        </div>
+    </div>
+
+    <!-- 1. HEADER SEMÁNTICO -->
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html" class="logo">📻 Frecuencia</a>
+        </div>
+        <!-- 2. NAV SEMÁNTICO -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="musica.html" class="active">Música</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="canciones.html">Canciones</a></li>
+                <li><a href="conciertos.html">Conciertos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. MAIN SEMÁNTICO -->
+    <main class="main-content">
+        <h1 class="page-title">Catálogo Musical y Géneros</h1>
+
+        <!-- Cajas de Géneros Musicales con Selector Visual HTML Puro (Sin JS) -->
+        <div class="flex-container">
+            
+            <!-- Tarjeta 1: Rock Internacional -->
+            <div class="index-card">
+                <div class="card-content">
+                    <h3>Rock Internacional</h3>
+                    <p>Guitarras enérgicas y melodías envolventes que llegan al corazón de cada uno.</p>
+                    
+                    <div class="card-selector-box">
+                        <span class="selector-label">Pista principal:</span>
+                        <div class="selector-value">🎵 Hey Jude - The Beatles</div>
+                    </div>
+                </div>
+                <audio controls class="audio-reproductor">
+                    <source src="multimedia/HeyJude.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio HTML5.
+                </audio>
+            </div>
+
+            <!-- Tarjeta 2: Pop -->
+            <div class="index-card">
+                <div class="card-content">
+                    <h3>Pop</h3>
+                    <p>Ritmos sintetizados para la pista de baile. Increíbles referentes, música para tus oídos.</p>
+                    
+                    <div class="card-selector-box">
+                        <span class="selector-label">Pista principal:</span>
+                        <div class="selector-value">🎵 Billie Jean - Michael Jackson</div>
+                    </div>
+                </div>
+                <audio controls class="audio-reproductor">
+                    <source src="multimedia/BillieJean.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio HTML5.
+                </audio>
+            </div>
+
+            <!-- Tarjeta 3: Urbano -->
+            <div class="index-card">
+                <div class="card-content">
+                    <h3>Urbano</h3>
+                    <p>Ritmos que te harán sonreír y bailar sin parar.</p>
+                    
+                    <div class="card-selector-box">
+                        <span class="selector-label">Pista principal:</span>
+                        <div class="selector-value">🎵 Gasolina - Daddy Yankee</div>
+                    </div>
+                </div>
+                <audio controls class="audio-reproductor">
+                    <source src="multimedia/Gasolina.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio HTML5.
+                </audio>
+            </div>
+
+        </div>
+
+        <!-- Sección: Recomendaciones y Discos en Spotify -->
+        <section class="spotify-recommendations">
+            <div class="spotify-header">
+                <h2>Recomendaciones y Discos en Spotify</h2>
+                <p>Escucha los álbumes icónicos de nuestros artistas recomendados directamente en la plataforma.</p>
+            </div>
+
+            <div class="spotify-grid">
+                <!-- Recomendación 1 -->
+                <div class="spotify-card">
+                    <div class="spotify-info">
+                        <h3>Abbey Road</h3>
+                        <span class="artist-name">The Beatles</span>
+                        <p>Una obra maestra atemporal del rock que marcó un antes y un después en la historia musical.</p>
+                    </div>
+                    <a href="https://open.spotify.com/album/0ETFjACtuP2ADo6LFhL6HN" target="_blank"
+                        rel="noopener noreferrer" class="btn-spotify">
+                        🟢 Escuchar en Spotify
+                    </a>
+                </div>
+
+                <!-- Recomendación 2 -->
+                <div class="spotify-card">
+                    <div class="spotify-info">
+                        <h3>Thriller</h3>
+                        <span class="artist-name">Michael Jackson</span>
+                        <p>El álbum más vendido de todos los tiempos, lleno de éxitos pop inmortales.</p>
+                    </div>
+                    <a href="https://open.spotify.com/intl-es/album/2ANVost0y2y52ema1E9xAZ" target="_blank"
+                        rel="noopener noreferrer" class="btn-spotify">
+                        🟢 Escuchar en Spotify
+                    </a>
+                </div>
+
+                <!-- Recomendación 3 -->
+                <div class="spotify-card">
+                    <div class="spotify-info">
+                        <h3>Barrio Fino</h3>
+                        <span class="artist-name">Daddy Yankee</span>
+                        <p>El disco que catapultó el reggaetón a escala global y definió la era urbana.</p>
+                    </div>
+                    <a href="https://open.spotify.com/intl-es/album/7BmWnXvx1CD6vtxtBd0czc" target="_blank"
+                        rel="noopener noreferrer" class="btn-spotify">
+                        🟢 Escuchar en Spotify
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Historia y Raíces de los Géneros -->
+        <section id="seccion-historia" class="origins-section">
+            <div class="origins-header">
+                <h2>Historia y Raíces de los Géneros</h2>
+                <p>Descubre cómo nacieron y quiénes marcaron un antes y un después en la música.</p>
+            </div>
+
+            <div class="origins-container">
+
+                <!-- Tarjeta 1: Rock -->
+                <div class="origin-card origin-card-right">
+                    <div class="origin-text-content">
+                        <h3>🎸 El Legado del Rock</h3>
+                        <p><strong>¡El rock no es solo música, es una actitud que reescribió las reglas de la historia!</strong> Todo comenzó a mediados de los años 50, fusionando la energía del blues, el country y el rhythm and blues para darle voz a una generación que buscaba romper moldes. Lo que arrancó con la rebeldía de pioneros como Elvis Presley y Chuck Berry, pronto se convirtió en un movimiento cultural global e imparable.</p>
+                        <p>En los años 60, la Invasión Británica liderada por The Beatles y The Rolling Stones revolucionó las melodías y la composición, mientras que genios de la guitarra como Jimi Hendrix y bandas titánicas como Led Zeppelin expandieron los límites sonoros hacia el rock psicodélico y el hard rock. Para las décadas de los 70 y 80, el género alcanzó dimensiones teatrales y estadios colmados gracias a la inigualable potencia vocal de Freddie Mercury con Queen, la sofisticación progresiva de Pink Floyd y la furia callejera de Guns N' Roses. Cada acorde, cada solo y cada grito rebelde dejaron una huella imborrable.</p>
+                    </div>
+                    <div class="origin-img-container">
+                        <img src="imagenes/rock.jpg" alt="Fotografía histórica y representativa de los orígenes y la estética del rock internacional" class="origin-img">
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Pop -->
+                <div class="origin-card origin-card-right">
+                    <div class="origin-text-content">
+                        <h3>🎤 La Revolución del Pop</h3>
+                        <p><strong>¡El pop no es solo género musical, es la banda sonora de la cultura pop global y el motor que mueve la industria del entretenimiento!</strong> Todo comenzó a tomar forma a mediados del siglo XX, evolucionando directamente de la música tradicional, el jazz y el rock and roll, pero diseñado con ganchos melódicos irresistibles, producciones impecables y un enfoque total en los éxitos masivos.</p>
+                        <p>En los años 80, la industria cambió para siempre gracias a la consagración de figuras titánicas: el indiscutido Rey del Pop, Michael Jackson, quien revolucionó los videoclips y la danza mundial, y la camaleónica Reina del Pop, Madonna, que redefinió los límites de la moda y el espectáculo visual. Para los 90, el fenómeno se expandió con las boy bands y girl groups como Spice Girls y Backstreet Boys, además de potencias vocales como Britney Spears y Beyoncé. Hoy en día, superestrellas modernas como Taylor Swift y Dua Lipa continúan escribiendo la historia de este género camaleónico.</p>
+                    </div>
+                    <div class="origin-img-container">
+                        <img src="imagenes/pop.jpg" alt="Imagen alusiva a la evolución histórica del género pop y sus grandes espectáculos visuales" class="origin-img">
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Urbano -->
+                <div class="origin-card origin-card-right">
+                    <div class="origin-text-content">
+                        <h3>🔥 El Movimiento Urbano</h3>
+                        <p><strong>¡La música urbana y el reggaetón no son solo un género, son un movimiento cultural global que conquistó las listas de todo el planeta!</strong> Todo comenzó a gestarse a finales de los años 80 y principios de los 90 en Puerto Rico y Panamá, fusionando el reggae en español, el dancehall jamaiquino y los ritmos del hip hop underground. Lo que empezó como un sonido clandestino y rebelde en los caseríos pronto encontró en pioneros como Daddy Yankee, Don Omar, Wisin & Yandel y Tego Calderón los cimientos para construir el imperio del "perreo".</p>
+                        <p>En la década de 2010, el género vivió su gran explosión comercial global. Himnos como <em>Despacito</em> rompieron barreras lingüísticas, mientras que superestrellas como J Balvin, Bad Bunny y Karol G transformaron la estética y el sonido, fusionándolo con el trap y la electrónica hasta dominar los escenarios más grandes del planeta. Hoy en día, la música urbana sigue dictando las tendencias de la industria.</p>
+                    </div>
+                    <div class="origin-img-container">
+                        <img src="imagenes/urb.jpg" alt="Fotografía representativa del movimiento y la cultura urbana moderna" class="origin-img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. FOOTER SEMÁNTICO -->
+    <footer class="main-footer">
+        <div class="footer-text">&copy; 2026 Frecuencia. Todos los derechos reservados. Julieta Palomares y Catalina Herrera. Nuestra señora de Fátima. 2026</div>
+    </footer>
+
+</body>
+
+</html>

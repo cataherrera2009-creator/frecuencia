@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frecuencia | Canciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="personal-bar">
+        <div class="personal-container">
+            <div class="personal-item">Desarrollado por: Catalina Herrera y Julieta Palomares</div>
+            <div class="personal-item">Proyecto Frecuencia - UTN 2026</div>
+        </div>
+    </div>
+
+    <!-- 1. HEADER SEMÁNTICO -->
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html" class="logo">📻 Frecuencia</a>
+        </div>
+        <!-- 2. NAV SEMÁNTICO -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="canciones.html" class="active">Canciones</a></li>
+                <li><a href="conciertos.html">Conciertos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. MAIN SEMÁNTICO -->
+    <main class="main-content">
+        <h1 class="page-title">Recomendaciones de la Semana</h1>
+        
+        <!-- Contenedor específico para la tabla (reemplaza el uso repetido de 'card') -->
+        <div class="tabla-contenedor">
+            <table class="tabla-canciones">
+                <thead>
+                    <tr class="trprincipal">
+                        <th>#</th>
+                        <th>Canción</th>
+                        <th>Artista</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="trnormal">
+                        <td>1</td>
+                        <td>BbY WOW</td>
+                        <td>KAROL G, Judeline, rusowsky</td>
+                        <td>Urbano</td>
+                    </tr>
+                    <tr class="trnormal">
+                        <td>2</td>
+                        <td>De Lejitos - Remix</td>
+                        <td>Jay Wheeler, Omar Courtz</td>
+                        <td>Urbano</td>
+                    </tr>
+                    <tr class="trnormal">
+                        <td>3</td>
+                        <td>Dichavate</td>
+                        <td>Ya Ice Dilan, Rey Tony, Helabusador</td>
+                        <td>Urbano</td>
+                    </tr>
+                    <tr class="trnormal">
+                        <td>4</td>
+                        <td>Puñaladas (Remix)</td>
+                        <td>Lauta, Amigo de Artistas & Tote</td>
+                        <td>Cumbia</td>
+                    </tr>
+                    <tr class="trnormal">
+                        <td>5</td>
+                        <td>Loser</td>
+                        <td>Tame Impala</td>
+                        <td>Pop internacional</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- 4. FOOTER SEMÁNTICO -->
+    <footer class="main-footer">
+        <div class="footer-text">&copy; 2026 Frecuencia. Todos los derechos reservados. Julieta Palomares y Catalina Herrera. Nuestra señora de Fátima. 2026</div>
+    </footer>
+
+</body>
+</html>
